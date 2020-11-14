@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flyer</title>
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="contenido-encabezado" id="contenido-encabezado">
+      <div class="texto-encabezado">
+        <p class="icono">
+          <i class="fas fa-glass-cheers"></i>
+        </p>
+        <h1 class="titulo">
+          Koya Web <br />Site<br />
+          <span class="titulo-naranja-neon texto-regular"
+            >50% de descuento</span
+          >
+        </h1>
+        <p class="descripcion">
+          En Koya Web estamos de super oferta. <br>
+          Queremos presentarte algunas de nuestras plantillas para ofrecer. <br>
+          Disfruta y posicionate.
+        </p>
+        <a href="" class="btn-link texto-regular">Mas información</a>
+      </div>
+    </header>
+
+    <main>
+        <section class="contenedor">
+            <h2 class="subtitulo-h2">Servicios</h2>
+            <p><span class="letra-capital">K</span>oya Web ipsum dolor sit, amet consectetur adipisicing elit. Facilis, iure dolor! Autem quo amet temporibus porro iure deserunt laboriosam libero?</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestias cupiditate cumque minima, vitae reprehenderit eligendi nesciunt dolorem distinctio veniam ut error nobis ipsum magnam. Exercitationem placeat doloribus vel quasi.</p>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate ducimus delectus quos. Ullam nisi aut placeat ratione accusantium repellendus, omnis excepturi tenetur deserunt laboriosam ut totam. Totam, molestias omnis.</p>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/2d78e61024.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('contenido-encabezado');
+            header.style.opacity = '1' - window.pageYOffset / 650;
+        });
+    </script>
+  </body>
+</html>
